@@ -25,7 +25,8 @@ void test(){
 	vector<pair<pair<ll, ll>, ll>> ops; //the second element ll is d, number of ops
 
 
-	for(ll i = 0; i < n; i++){ //we will find minimum in a[0...n-1] then a
+	for(ll i = 0; i < n; i++){ //we will find minimum in a[0...n-1] then after the 
+		//first iteration, we'll have a[1....n-1] and after we'll have a[2....n-1]
 		ll mv = 1e12, mi = -1; //mi is an index while mv is an element both for min
 		for(ll j = i; j < n; j++){
 
